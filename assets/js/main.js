@@ -111,7 +111,7 @@ if (contactForm) {
         const subject = document.getElementById("subject").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        const mailto = new URL("mailto:nidhi@example.com");
+        const mailto = new URL("mailto:nidhidongre036@gmail.com");
         mailto.searchParams.set("subject", subject || "Portfolio enquiry");
         mailto.searchParams.set(
             "body",
