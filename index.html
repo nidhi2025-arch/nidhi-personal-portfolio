@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nidhi's personal portfolio website. Software Engineer and Front-End Developer focused on responsive, polished web experiences.">
+    <meta name="theme-color" content="#0b1220">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Nidhi | Software Engineer & Front-End Developer</title>
+</head>
+<body>
+    <div class="page-bg" aria-hidden="true">
+        <span class="page-bg__orb page-bg__orb--one"></span>
+        <span class="page-bg__orb page-bg__orb--two"></span>
+        <span class="page-bg__grid"></span>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo" aria-label="Go to home">Nidhi<span>.</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Close menu">X</button>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-button" type="button" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon theme-toggle__icon--sun">S</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--moon">M</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="container home__container">
+                <div class="home__content reveal">
+                    <p class="eyebrow">Software Engineer | Front-End Developer | UI Builder</p>
+                    <h1 class="home__title">Hi, I'm <span>Nidhi</span>.</h1>
+                    <p class="home__subtitle">I build clean, responsive, and delightful digital experiences.</p>
+                    <p class="home__description">
+                        I enjoy turning ideas into polished interfaces with clear structure, thoughtful motion,
+                        and code that is easy to maintain. My focus is on modern front-end development,
+                        accessible UI, and product-minded problem solving.
+                    </p>
+
+                    <div class="home__cta">
+                        <a href="assets/pdf/Alexa-Cv.pdf" class="button button--primary" target="_blank" rel="noopener">Download Resume</a>
+                        <a href="#portfolio" class="button button--ghost">View Selected Work</a>
+                    </div>
+
+                    <div class="home__meta">
+                        <article class="stat-card">
+                            <span class="stat-card__value">Responsive</span>
+                            <span class="stat-card__label">Design that adapts beautifully on every screen</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-card__value">Fast</span>
+                            <span class="stat-card__label">Lightweight, accessible, and performance-aware</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-card__value">Polished</span>
+                            <span class="stat-card__label">Visual details that make the site feel premium</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="home__visual reveal" aria-label="Portfolio highlight">
+                    <div class="hero-card">
+                        <div class="hero-card__glow"></div>
+                        <div class="hero-card__portrait">
+                            <div class="hero-card__ring"></div>
+                            <img class="hero-card__photo" src="assets/img/my_image.jpeg" alt="Portrait of Nidhi">
+                        </div>
+
+                        <div class="hero-card__content">
+                            <p class="hero-card__label">Currently building</p>
+                            <h2 class="hero-card__headline">Modern web experiences with personality.</h2>
+                            <p class="hero-card__copy">
+                                From landing pages to dashboards, I like creating interfaces that feel confident,
+                                clear, and memorable.
+                            </p>
+                        </div>
+
+                        <div class="hero-card__chips">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive UI</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card--one">
+                        <span class="floating-card__title">Focus</span>
+                        <strong>Front-end + UX</strong>
+                    </div>
+                    <div class="floating-card floating-card--two">
+                        <span class="floating-card__title">Style</span>
+                        <strong>Clean, warm, bold</strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">About me</p>
+                    <h2 class="section__title">A thoughtful builder with an eye for detail.</h2>
+                    <p class="section__subtitle">
+                        I like making software that feels simple for users and satisfying to work on behind the scenes.
+                    </p>
+                </div>
+
+                <div class="about__container">
+                    <div class="about__panel reveal">
+                        <div class="about__badge">
+                            <img src="assets/img/my_image.jpeg" alt="Portrait of Nidhi">
+                        </div>
+                        <div class="about__story">
+                            <h3>What I care about</h3>
+                            <p>
+                                Writing solid front-end code, designing smooth interactions, and keeping the user
+                                experience crisp across devices.
+                            </p>
+                            <p>
+                                I value clarity, consistency, and good aesthetics. The best portfolio is one that
+                                feels intentional from the first glance all the way down to the footer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about__details reveal">
+                        <article class="info-card">
+                            <span class="info-card__kicker">Name</span>
+                            <strong>Nidhi</strong>
+                        </article>
+                        <article class="info-card">
+                            <span class="info-card__kicker">Role</span>
+                            <strong>Software Engineer</strong>
+                        </article>
+                        <article class="info-card">
+                            <span class="info-card__kicker">Approach</span>
+                            <strong>Responsive, practical, and polished</strong>
+                        </article>
+                        <article class="info-card info-card--wide">
+                            <span class="info-card__kicker">Summary</span>
+                            <p>
+                                I build front-end experiences with a product mindset, combining layout, motion,
+                                and usability into a clean finished result.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2 class="section__title">A focused stack for modern web work.</h2>
+                    <p class="section__subtitle">Tools and technologies I reach for when I want speed, clarity, and quality.</p>
+                </div>
+
+                <div class="skills__grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-card__top">
+                            <h3>Front-end</h3>
+                            <span>Core UI</span>
+                        </div>
+                        <ul class="tag-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Layouts</li>
+                            <li>Animation</li>
+                            <li>Accessibility</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card__top">
+                            <h3>Engineering</h3>
+                            <span>Build quality</span>
+                        </div>
+                        <ul class="tag-list">
+                            <li>Problem Solving</li>
+                            <li>Debugging</li>
+                            <li>Git & GitHub</li>
+                            <li>API Integration</li>
+                            <li>Testing Mindset</li>
+                            <li>Clean Code</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card__top">
+                            <h3>Product</h3>
+                            <span>What users feel</span>
+                        </div>
+                        <ul class="tag-list">
+                            <li>UI Planning</li>
+                            <li>Design Systems</li>
+                            <li>Typography</li>
+                            <li>Content Flow</li>
+                            <li>Performance</li>
+                            <li>Usability</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 class="section__title">A few featured concepts and visuals.</h2>
+                    <p class="section__subtitle">
+                        These cards show the kind of interfaces I like to create: bold, structured, and device-friendly.
+                    </p>
+                </div>
+
+                <div class="portfolio__grid">
+                    <article class="project-card reveal">
+                        <a class="project-card__image" href="assets/img/portfolio1.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/portfolio1.jpg" alt="Creative workspace with a glowing desktop setup">
+                        </a>
+                        <div class="project-card__body">
+                            <div class="project-card__header">
+                                <h3>Creative Landing Experience</h3>
+                                <span>01</span>
+                            </div>
+                            <p>Visual-first layout with rich contrast and a product-ready hero section.</p>
+                            <div class="project-card__tags">
+                                <span>UI</span><span>Motion</span><span>Responsive</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-card__image" href="assets/img/portfolio2.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/portfolio2.jpg" alt="Minimal dark laptop setup with purple accent lighting">
+                        </a>
+                        <div class="project-card__body">
+                            <div class="project-card__header">
+                                <h3>Minimal Focus Mode</h3>
+                                <span>02</span>
+                            </div>
+                            <p>Dark interface direction with a clean hierarchy and subtle atmospheric styling.</p>
+                            <div class="project-card__tags">
+                                <span>Dark UI</span><span>Type</span><span>Spacing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-card__image" href="assets/img/portfolio3.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/portfolio3.jpg" alt="Desktop workspace with laptop, phone, and tablet layout">
+                        </a>
+                        <div class="project-card__body">
+                            <div class="project-card__header">
+                                <h3>Multi-device Layout</h3>
+                                <span>03</span>
+                            </div>
+                            <p>Responsive presentation designed to look intentional on desktop, tablet, and phone.</p>
+                            <div class="project-card__tags">
+                                <span>Adaptive</span><span>Grid</span><span>UX</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">What I do</p>
+                    <h2 class="section__title">Services that turn ideas into real interfaces.</h2>
+                    <p class="section__subtitle">
+                        Whether it is a portfolio, a business site, or a dashboard, the goal is the same:
+                        make it feel polished and effortless.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">01</div>
+                        <h3>Responsive Web Design</h3>
+                        <p>Layouts that adapt cleanly and keep the visual story strong on every screen size.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">02</div>
+                        <h3>Front-end Development</h3>
+                        <p>Maintainable markup, structured styling, and thoughtful interactions built with care.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">03</div>
+                        <h3>UI Polish & Motion</h3>
+                        <p>Small motion cues, contrast, and spacing details that make a page feel premium.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project section">
+            <div class="container">
+                <div class="project__banner reveal">
+                    <div class="project__content">
+                        <p class="eyebrow">Let's build something great</p>
+                        <h2 class="section__title">I can help shape your next website into something memorable.</h2>
+                        <p class="section__subtitle">
+                            If you want a portfolio, a landing page, or a front-end refresh that feels modern and confident,
+                            I'd love to collaborate.
+                        </p>
+                    </div>
+                    <a href="#contact" class="button button--primary">Start a Conversation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">Working style</p>
+                    <h2 class="section__title">How I like to work.</h2>
+                    <p class="section__subtitle">Clear communication, steady iteration, and a strong finish.</p>
+                </div>
+
+                <div class="testimonial__grid">
+                    <article class="testimonial-card reveal">
+                        <span class="testimonial-card__quote">01</span>
+                        <p>Start with structure so the UI feels calm, not crowded.</p>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <span class="testimonial-card__quote">02</span>
+                        <p>Refine spacing, color, and motion until the page feels intentional.</p>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <span class="testimonial-card__quote">03</span>
+                        <p>Test on mobile and desktop so the final result is dependable everywhere.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2 class="section__title">Want to work together?</h2>
+                    <p class="section__subtitle">
+                        Use the form or the links below to reach out. The form opens your email client with the message prepared.
+                    </p>
+                </div>
+
+                <div class="contact__container">
+                    <div class="contact__info reveal">
+                        <div class="contact-card">
+                            <span class="contact-card__label">Email</span>
+                            <a href="mailto:nidhi@example.com">nidhi@example.com</a>
+                        </div>
+                        <div class="contact-card">
+                            <span class="contact-card__label">LinkedIn</span>
+                            <a href="#home">Add your LinkedIn profile</a>
+                        </div>
+                        <div class="contact-card">
+                            <span class="contact-card__label">GitHub</span>
+                            <a href="#portfolio">Add your GitHub profile</a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form reveal" id="contact-form">
+                        <div class="contact__field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project idea" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary">Send Message</button>
+                        <p class="contact__note">This opens your email app with a prefilled message.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <a href="#home" class="footer__logo">Nidhi<span>.</span></a>
+                <p class="footer__text">Software Engineer & Front-End Developer</p>
+            </div>
+            <p class="footer__copy">Built with care and a lot of love for clean UI.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">^</a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
